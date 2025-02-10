@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <form id="signupForm">
+    <h1>Sign Up</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+    <span class="ErrorName" style="display:none;color:red;">Name is required</span>
+    <span class="ErrorName2" style="display:none;color:red;">Name cannot be a number</span>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" />
+    <span class="ErrorEmail" style="display:none;color:red;">Email is required</span>
+    <span class="ErrorEmail2" style="display:none;color:red;">Invalid email format</span>
+
+    <label for="mobile">Mobile:</label>
+    <input type="text" id="mobile" name="mobile" />
+    <span class="ErrorAge" style="display:none;color:red;">Mobile is required</span>
+    <span class="ErrorAge2" style="display:none;color:red;">Mobile must be a number</span>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" />
+    <span class="Erroraddress" style="display:none;color:red;">Address is required</span>
+    <span class="Erroraddress2" style="display:none;color:red;">Invalid address</span>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+    <span class="radio-gender" style="display:none;color:red;">Gender is required</span>
+
+    <button type="button">Sign Up</button>
+  </form>
+
+  <script src="login.js"></script>
+</body>
+
+</html>
